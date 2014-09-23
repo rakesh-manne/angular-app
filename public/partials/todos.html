@@ -11,15 +11,15 @@
     </div>
     <div style="clear: both"></div>
       <div class="list-group" ng-repeat="todo in todos | reverse">
-      	<span class="pull-left" style="width:200px;">
+        <span class="pull-left" style="width:200px;">
           <a ui-sref="home.todos.show({todoId: todo.id})" class="list-group-item"  ui-sref-active="active">{{todo.title}}</a>
-	    </span>
-	    <span style="padding:10px 0px 0px 10px;">
-		  <button style="margin-top:9px;" data-ng-click="deleteTodo(todo.id)" class="btn btn-danger btn-xs">
-		    <span class="glyphicon glyphicon-remove"></span>
-		  </button>
-	    </span>
-	  </div>
+        </span>
+        <span style="padding:10px 0px 0px 10px;">
+          <button style="margin-top:9px;" data-ng-click="deleteTodo(todo.id)" class="btn btn-danger btn-xs">
+            <span class="glyphicon glyphicon-remove"></span>
+          </button>
+        </span>
+      </div>
     </div>
   </div>
   <div class="col-xs-7 col-md-6 .col-xs-offset-2 col-md-offset-1">
